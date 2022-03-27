@@ -9,7 +9,8 @@ getRangeTable(
   end,
   condition = "ERROR",
   phase = "buildsrc",
-  version = "release"
+  version = "release",
+  dump = TRUE
 )
 }
 \arguments{
@@ -22,6 +23,8 @@ getRangeTable(
 \item{phase}{character(1) "buildsrc", "checksrc", "install", "buildbin"}
 
 \item{version}{character(1) "release" (default) or "devel"}
+
+\item{dump}{logical(1) if TRUE (default) produce pastable text}
 }
 \description{
 make table of package names and email addresses for a set of packages
